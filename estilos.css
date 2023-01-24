@@ -1,1 +1,53 @@
 *{ margin:0; padding: 0; box-sizing: border-box;}
+.galeria{
+    font-family: 'Dancing Script', cursive;
+}
+.galeria h3{
+    text-align: center;
+    margin: 20px 0 15px 0;
+    font-weight: 200;
+}
+.linea{ border-top: 5px solid rgba(20, 113, 227, 0.577);}
+.contenedor-imagenes{ 
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+.contenedor-imagenes .imagen {
+    width: 32%;
+    position: relative;
+    height: 250px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 3 rgba(0, 0, 0, 0.7);
+}
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(70, 218, 228, 0.676);
+    width: auto;
+    height: auto;
+    transition: .5s ease;
+    overflow: hidden;
+}
+.overlay h2{
+    color: #000;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.imagen:hover .overlay{
+    height: 100%;
+    cursor:pointer;
+}
