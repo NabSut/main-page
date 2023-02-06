@@ -21,10 +21,15 @@
     color: rgba(57, 188, 244, 0.854);
     text-decoration: none;
 }
+@media (max-width: 1300) {
+    .menu nav, .menu-items li {
+        justify-items: center;
+    }    
+}m
 /*FIN MENU*/ 
 /*Galeria de fotos */
 .galeria{
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Sen', sans-serif;
 }
 .galeria h3 {
     text-align: center;
