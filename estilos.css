@@ -11,7 +11,7 @@
 }
 .menu p {
     padding-right: 24%;
-    color:azure;
+    color:rgb(188, 238, 238);
     font-size: 25px;
 }
 .menu-items li {
@@ -31,7 +31,6 @@
     margin: 25% 0 15px 0;
     font-weight: 200;
 }
-.linea { border-top: 4px solid rgba(161, 238, 238, 0.577);}
 .contenedor-imagenes{ 
     display: flex;
     width: 100%;
@@ -41,7 +40,7 @@
     border-radius: 3px;
 }
 .contenedor-imagenes .imagen {
-    width: 30%;
+    width: 34%;
     position:relative;
     height: 250px;
     margin-bottom: 5px;
@@ -51,13 +50,13 @@
 .imagen img {
     width: 100%;
     height: 100%;
-    object-fit:cover;
+    object-fit:scale-down;
 }
 .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: rgba(70, 218, 228, 0.676);
+    background-color: rgba(57, 188, 244, 0.65);
     width: 100;
     height: 0;
     transition: .5s ease;
@@ -76,3 +75,12 @@
     height: 100%;
     cursor:pointer;
 }
+@media screen and ( max-width: 980px) {
+    .contenedor-imagenes{
+        width: 85%;
+    }    
+    .contenedor-imagenes .imagen{
+        width: 50%;
+    }
+}
+/*FIN galeria fotos*/ 
